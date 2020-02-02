@@ -79,6 +79,7 @@ export default class CameraScreen extends React.Component {
     }
 
     render() {
+      const {navigate} = this.props.navigation;
       return (
         <View style={{ flex: 1 }}>
           <Camera style={{ flex: 1 }} type={this.state.type} ref={ref => {
@@ -116,9 +117,8 @@ export default class CameraScreen extends React.Component {
           <TouchableOpacity onPress={()=>this.updateImages()}>
                   <Text>Find Recipes</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => {
-            console.log(this.state.links)}
-          }>
+          <TouchableOpacity onPress={() => navigate('Results', {links: this.state.links})}
+           >
                   <Text>Print</Text>
           </TouchableOpacity>
         </View>

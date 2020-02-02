@@ -7,11 +7,13 @@ import {createStackNavigator} from 'react-navigation-stack';
 import HomeScreen from './HomeScreen';
 import ProfileScreen from './ProfileScreen';
 import CameraScreen from './CameraScreen';
+import ResultsScreen from './ResultsScreen';
 
 const MainNavigator = createStackNavigator({
   Home: HomeScreen,
   Profile: ProfileScreen,
-  Camera: CameraScreen
+  Camera: CameraScreen,
+  Results: ResultsScreen
 },
 {
   initialRouteName: 'Home',
