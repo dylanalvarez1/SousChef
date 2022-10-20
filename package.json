@@ -21,7 +21,7 @@
     "react-native": "~0.61.4",
     "react-native-camera": "^3.16.0",
     "react-native-gesture-handler": "^1.5.3",
-    "react-native-reanimated": "^1.4.0",
+    "react-native-reanimated": "^2.10.0",
     "react-native-safe-area-context": "^0.6.4",
     "react-native-screens": "^2.0.0-alpha.12",
     "react-native-unimodules": "~0.7.0",
